@@ -279,11 +279,26 @@ plotly>=5.18.0
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new detection pattern'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
+Contributions are welcome! Whether you're fixing bugs, improving documentation, or adding new features, your help is appreciated.
+
+**How to contribute:**
+
+1. **Fork the repository** - Click the Fork button on GitHub
+2. **Clone your fork** - `git clone https://github.com/your-username/Log-Threat-Detection.git`
+3. **Create a feature branch** - `git checkout -b feature/your-feature-name`
+4. **Make your changes** - Add your improvements or fixes
+5. **Test your changes** - Ensure notebooks and dashboard still work
+6. **Commit your changes** - `git commit -am 'Add: description of your changes'`
+7. **Push to your fork** - `git push origin feature/your-feature-name`
+8. **Open a Pull Request** - Submit your changes for review
+
+**Ideas for contributions:**
+- Add new threat detection patterns
+- Improve ML model accuracy
+- Add more visualization options
+- Optimize performance
+- Improve documentation
+- Fix bugs or issues
 
 ## License
 
@@ -291,7 +306,9 @@ This project is open source and available for educational purposes.
 
 ## Author
 
-Security Analysis Team - Log Threat Detection Project
+**Adhyatma Chrysostomos Davu**
+
+Log Threat Detection Analysis Project
 
 ## Acknowledgments
 
