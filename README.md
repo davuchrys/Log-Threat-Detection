@@ -1,8 +1,8 @@
-# 🛡️ Log Threat Detection Analysis
+# Log Threat Detection Analysis
 
 A comprehensive security analysis system for detecting and visualizing threats in web server logs using Machine Learning and statistical methods.
 
-## 📊 Features
+## Features
 
 - **Real-time threat detection** - SQL injection, XSS, path traversal attacks
 - **ML-powered anomaly detection** - Isolation Forest algorithm
@@ -10,7 +10,7 @@ A comprehensive security analysis system for detecting and visualizing threats i
 - **Comprehensive analysis notebooks** - Three detailed Jupyter notebooks
 - **Threat classification & risk scoring** - Multi-level severity assessment
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 analisis data log/
@@ -31,7 +31,7 @@ analisis data log/
 └── requirements.txt          # Python dependencies
 ```
 
-## 📚 Analysis Branches
+## Analysis Branches
 
 ### Branch 1: Exploratory Data Analysis & Threat Detection
 **Notebook:** `1.01-eda-and-threat-detection.ipynb`
@@ -84,7 +84,7 @@ analisis data log/
 - Attack success metrics
 - Prioritized remediation plan
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -116,7 +116,7 @@ source .venv/bin/activate
 pip install pandas numpy matplotlib seaborn scikit-learn scipy streamlit plotly
 ```
 
-## 💻 How to Run
+## How to Run
 
 ### Option 1: Interactive Dashboard (Recommended)
 
@@ -129,12 +129,12 @@ streamlit run security_dashboard.py
 Then open your browser to: **http://localhost:8501**
 
 **Dashboard Features:**
-- 📈 Security overview with key metrics
-- 🤖 ML anomaly detection visualization
-- 🎯 Threat classification analysis
-- 👤 Threat actor profiles
-- 💡 Actionable security recommendations
-- 📥 Export reports to CSV
+- Security overview with key metrics
+- ML anomaly detection visualization
+- Threat classification analysis
+- Threat actor profiles
+- Actionable security recommendations
+- Export reports to CSV
 
 **Alternative (Windows):**
 ```bash
@@ -186,7 +186,7 @@ print(f"Threats detected: {summary['total_threats']}")
 print(f"Anomalous IPs: {(ip_anomalies['anomaly_score'] == -1).sum()}")
 ```
 
-## 📊 Output Files
+## Output Files
 
 Analysis results are saved to the `results/` directory:
 
@@ -195,7 +195,7 @@ Analysis results are saved to the `results/` directory:
 - `high_risk_ips.csv` - IPs classified as CRITICAL or HIGH risk
 - `anomalous_ips.csv` - ML-detected anomalous behavior
 
-## 🎯 Threat Types Detected
+## Threat Types Detected
 
 | Threat Type | Description | Severity Weight |
 |------------|-------------|----------------|
@@ -205,14 +205,14 @@ Analysis results are saved to the `results/` directory:
 | **Suspicious Status** | Unusual HTTP response codes | 5 |
 | **ML Anomalies** | Behavioral outliers | Variable |
 
-## 🔬 Detection Methods
+## Detection Methods
 
 1. **Pattern-Based Detection** - Regex patterns for known attack signatures
 2. **Statistical Analysis** - Z-score based outlier detection
 3. **Machine Learning** - Isolation Forest algorithm for anomaly detection
 4. **Behavioral Profiling** - IP-based threat actor identification
 
-## 📈 Example Results
+## Example Results
 
 ```
 COMPREHENSIVE THREAT ANALYSIS
@@ -239,7 +239,7 @@ ML ANOMALY DETECTION:
 - Top Threat Actor: 192.168.1.105 (Score: 247)
 ```
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -264,7 +264,7 @@ python -m ipykernel install --user
 - Make sure all cells are run in order from top to bottom
 - Restart kernel and run all cells if needed
 
-## 📝 Requirements
+## Requirements
 
 ```txt
 pandas>=2.0.0
@@ -277,7 +277,7 @@ streamlit>=1.30.0
 plotly>=5.18.0
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/improvement`)
@@ -285,15 +285,15 @@ plotly>=5.18.0
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available for educational purposes.
 
-## 👥 Author
+## Author
 
 Security Analysis Team - Log Threat Detection Project
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Threat detection patterns based on OWASP Top 10
 - ML anomaly detection using scikit-learn Isolation Forest
