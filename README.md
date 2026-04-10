@@ -113,7 +113,11 @@ source .venv/bin/activate
 
 3. **Install dependencies:**
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn scipy streamlit plotly
+# Core analysis dependencies
+pip install -r requirements.txt
+
+# Dashboard dependencies
+pip install -r requirements_dashboard.txt
 ```
 
 ## How to Run
@@ -123,7 +127,13 @@ pip install pandas numpy matplotlib seaborn scikit-learn scipy streamlit plotly
 Run the Streamlit web dashboard for real-time threat monitoring:
 
 ```bash
-streamlit run security_dashboard.py
+# Cross-platform reliable command
+python -m streamlit run security_dashboard.py
+```
+
+**Windows (recommended):**
+```bash
+py -m streamlit run security_dashboard.py
 ```
 
 Then open your browser to: **http://localhost:8501**
@@ -139,6 +149,18 @@ Then open your browser to: **http://localhost:8501**
 **Alternative (Windows):**
 ```bash
 run_dashboard.bat
+```
+
+> Note: `run_dashboard.bat` uses `streamlit run ...` directly and requires `streamlit` to be available in your PATH.
+> If you see `'streamlit' is not recognized`, use `py -m streamlit run security_dashboard.py` instead.
+
+### Windows Quick Start (copy/paste)
+
+```bash
+cd "analisis data log"
+py -m pip install -r requirements.txt
+py -m pip install -r requirements_dashboard.txt
+py -m streamlit run security_dashboard.py
 ```
 
 ### Option 2: Jupyter Notebooks
